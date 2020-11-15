@@ -847,35 +847,6 @@ a:hover {
   color: #4e4e4e;
 }
 
-/*--------------------------------------------------------------
-# Counter
---------------------------------------------------------------*/
-.counter-box {
-  color: #fff;
-  text-align: center;
-}
-
-@media (min-width: 577px) {
-  .counter-box {
-    margin-bottom: 1.8rem;
-  }
-}
-
-.counter-ico {
-  margin-bottom: 1rem;
-}
-
-.counter-ico .ico-circle {
-  height: 60px;
-  width: 60px;
-  line-height: 1.8;
-  box-shadow: 0 0 0 10px #cde1f8;
-}
-
-.counter-num .counter {
-  font-size: 2rem;
-  margin-bottom: 0;
-}
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -1273,8 +1244,6 @@ a:hover {
 
 .post-box{
   box-sizing: border-box;
-  /*border: solid;
-  border-color: blue;*/
   padding: 2rem;
   margin: 0%;
 }
@@ -1308,8 +1277,9 @@ a:hover {
 @media (min-width: 768px) {
   .post-box,
   .form-comments,
-  .box-comments, {
-    padding: 1rem;
+  .box-comments,
+  .widget-sidebar {
+    padding: 3rem;
   }
 }
 
@@ -1363,7 +1333,6 @@ line-height: 2.5rem;
 
 /*--agreg para el modal de prueba--*/
 
-
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -1378,19 +1347,20 @@ body {
 
 .cardsWrapper {
   display: flex;
+  width: 50%;
+
 }
 
 
+
 .cardd {
-  width: 45vw;
-  height: 80vh;
-  background-color: $white;
+  background-color: white;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   margin: 0.5rem;
 }
 
 .cardd-figure {
-  margin: 5rem;
+  margin: 1rem;
 
 
 }
@@ -1403,6 +1373,11 @@ body {
 
 .card-block {
   padding: 1rem 2rem 2rem;
+}
+
+.card-block p {
+  text-align: justify;
+  line-height: 2rem;
 }
 
 button.card-button {
@@ -1426,9 +1401,11 @@ button.card-button {
   box-shadow: 0 0 0 4px rgba(21, 156, 228, 0.7);
   outline: none;
 }
+
   .modal-body p {
     text-align: justify;
   }
+
 .modal-outer {
   padding: 2rem;
   align-items: center;
@@ -1446,9 +1423,9 @@ button.card-button {
 }
 
 .modal-outer.visible {
-
   opacity: 1;
   pointer-events: all;
+
 }
 
 .modal-inner {
@@ -1470,6 +1447,12 @@ button.card-button {
   .cardsWrapper {
     flex-wrap: wrap;
   }
+}
+
+.modal-dialog .modal-content{
+  background: #E6EDFA;
+  line-height: 2rem;
+
 }
 /*--agreg--*/
 
@@ -1519,6 +1502,8 @@ button.card-button {
 
 /*------/ Sidebar /------*/
 .widget-sidebar .sidebar-title {
+  text-align: left;
+  flex-direction: row-reverse ;
   margin-top: 1rem;
   font-size: 1.6rem;
   font-weight: 600;
@@ -1532,6 +1517,12 @@ button.card-button {
   display: flex;
   position: relative;
   padding: 6px 0 6px 24px;
+}
+
+.widget-sidebar .list-sidebar li:hover {
+  text-decoration: underline;
+  background-color: #E6EDFA;
+
 }
 
 .widget-sidebar .list-sidebar li:before {
