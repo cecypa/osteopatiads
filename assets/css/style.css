@@ -1573,18 +1573,15 @@ button.card-button {
 footer {
   text-align: center;
   color: #fff;
-  padding: 25px 0;
+  padding: 15px 0;
   background: #0062d3;
 }
 
-footer .copyright {
-  margin-bottom: .3rem;
+footer .copyright-box a:hover{
+  color: #B738DD;
 }
 
-footer .credits {
-  margin-bottom: 0;
-}
 
-footer .credits a {
+footer .copyright-box a {
   color: #fff;
 }
